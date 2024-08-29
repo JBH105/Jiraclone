@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body  {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+*{
+  padding:0;
+  margin:0 ;
+  box-sizing: border-box;
+}
+.logo{
+  color: white;
+}
+.header_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:5px 10px;
+  background: #3a61a8;
+
+  .sign_out{
+    outline: none;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+}
+.card_main{
+  background-color: white;
+  border-radius: 6px;
+  width:100%;
+  padding:12px;
+  margin:10px 0px;
+  .issue_type{
+    font-size: 11px;
+    background: #3a61a8;
+    color: white;
+    padding: 3px 9px;
+    border-radius: 3px;
+    margin-top: 11px;
+    display: inline-block;
+  }
+.card_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  h1{
+font-size: 18px;
+letter-spacing: 2px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+  }
+
+  .icon_wrapper{
+    display: flex;
+    .close_icon{
+      color:red;
+      margin:0px 5px;
+      cursor: pointer;
+    }
+    .edit_icon{
+      color:#3a61a8 ;
+      cursor: pointer;
+
+      margin:0px 5px;
+    }
+  }
+}
+.task_id{
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  p{
+    font-size: 13px;
+    padding-left: 5px;
+  }
+}
+}
+
+.main_wrapper{
+  display: flex;
+  align-items: flex-start;
+  overflow-x: scroll;
+  height: max-content;
+  margin-top: 40px;
+  max-width: 100%;
+  overflow: auto;
+  .column_card_wrapper{
+    background: gainsboro;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin:0px 25px;
+    width: 300px;
+    min-width: 300px;
+    align-self: stretch;
+    transition: 0.5s all ease;
+    .header_inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .close_icon{
+        fill: red;
+      }
+      h1{
+        font-size: 24px;
+      }
+    }
+    .add_tasks_input{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border-radius: 6px;
+      border: none;
+      position: relative;
+      button{
+        position: absolute;
+        right: 9px;
+        background: transparent;
+        outline: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top:50%;
+        transform: translateY(-50%);
+        svg{
+          margin-left: 5px;
+          cursor: pointer;
+        }
+      }
+      .add_tasks_input{
+        outline: none;
+        padding: 10px 30px 10px 10px;
+      }
+    }
+    .delete_button{
+      outline: none;
+      border: 2px solid red;
+      background: transparent;
+      border-radius: 6px;
+      padding: 10px 25px;
+      cursor: pointer;
+    }
+  }
+  .plus_button{
+    width: 50px;
+    height: 50px;
+    background-color: #3a61a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 17px;
+    cursor: pointer;
+    svg{
+      height: 25px;
+      fill: white;
+    }
+  }
+  
+}
